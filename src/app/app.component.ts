@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'nivelacion-s3';
+
+  titulo = 'nivelacion Spring 3 - ciclo 4';
+
 }
