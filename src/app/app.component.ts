@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  titulo = 'nivelacion Spring 3 - ciclo 4';
+  titulo = 'nivelacion Spring 3, Spring 4 - ciclo 4';
 
 }

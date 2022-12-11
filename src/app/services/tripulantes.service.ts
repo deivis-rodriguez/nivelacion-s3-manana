@@ -17,4 +17,11 @@ export class TripulantesService {
   public listaTripulantes(): Observable<Tripulante[]> {
     return this.http.get<Tripulante[]>(this.ruta);
   }
+
+  public eliminarTripulante(idTripulante: string) {
+    console.log(idTripulante);
+    
+    return this.http.delete<void>(`${this.ruta}/${idTripulante}`);
+  }
+
 }

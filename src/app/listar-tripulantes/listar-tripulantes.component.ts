@@ -14,9 +14,16 @@ export class ListarTripulantesComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.tripulanteServicio.listaTripulantes().subscribe((tripulantes) => { 
+    this.tripulanteServicio.listaTripulantes().subscribe((tripulantes) => {
       this.listaTripulantes = tripulantes;
     })
+  }
+
+  eliminar(id: string) {
+    this.tripulanteServicio.eliminarTripulante(id).subscribe(()=>{
+      this.ngOnInit()
+      alert("eliminado")
+    });
   }
 
 }

@@ -2,6 +2,5 @@
 <div *ngFor="let tripulante of listaTripulantes">
     <p>Nombre: {{tripulante.nombre}}</p>
     <p>Curso: {{tripulante.cursos}}</p>
+    <button (click)="eliminar(tripulante.idTripulante)">Eliminar</button>
 </div>
-
-
